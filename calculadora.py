@@ -25,11 +25,12 @@ displayText = StringVar()
 display = ttk.Entry(root, textvariable=displayText,
 					style="TEntry")
 display.config(justify="right")
-display.grid(row=0,
-			 column=0,
-			 columnspan=3,
-			 padx=10,
-			 pady=10)
+display.grid(row = 0,
+			 column = 0,
+			 columnspan = 4,
+			 padx = 10,
+			 pady = 10,
+			 sticky = 'ew')
 
 
 res=StringVar()
@@ -61,7 +62,7 @@ boton3 =ttk.Button(root, text ="3", command= lambda: pulsar("3"))
 boton3.grid(row=4 , column=2 )
 
 boton = ttk.Button(root, text ="0", command= lambda: pulsar("0"))
-boton.grid(row=5, column=0, columnspan =2 )
+boton.grid(row=5, column=0, columnspan =2 , sticky = 'ew')
 boton = ttk.Button(root, text =",", command= lambda: pulsar(","))
 boton.grid(row=5, column=2 )
 botonIgual = ttk.Button(root, text ="=", command= lambda: evaluar())
