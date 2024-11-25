@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-
+print("hola mundo")
 def pulsar(num):
 	# global displayText
 	displayText.set(displayText.get()+ num)
